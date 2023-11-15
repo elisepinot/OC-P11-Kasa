@@ -1,0 +1,10 @@
+nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 309px;
+}
+
+nav a {
+   color: #ff6060;
+}

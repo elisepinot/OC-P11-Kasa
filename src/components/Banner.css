@@ -1,0 +1,30 @@
+.banner {
+   height: 224px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.banner::before {
+   content: '';
+   background: url('../assets/banner-img.png'), rgba(0, 0, 0, 0.3);
+   background-size: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-position: center;
+   /* opacity: 0.3; */
+   border-radius: 25px;
+   background-blend-mode: darken;
+}
+
+.banner-title {
+   position: relative;
+   color: white;
+   font-weight: 500;
+   font-size: 48px;
+   text-align: center;
+}

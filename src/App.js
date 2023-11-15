@@ -1,13 +1,22 @@
 import './App.css';
-import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Accomodation from './pages/Accomodation/Accomodation';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
+import Header from './components/Header';
+import Footer from './components/Footer';
 function App() {
    return (
       <div className='App'>
-         <header className='App-header'>
-            <h1>Hello World</h1>
-            <p>Comment ça va ? Et là imaginons j\&aposajoute quelque chose ?</p>
-            <h2>ça fonctionne bien alors ?</h2>
-         </header>
+         <Header />
+         <Routes>
+            <Route path='/' element={<Home />}></Route>
+            <Route path='/about' element={<About />}></Route>
+            <Route path='/accomodation/:id' element={<Accomodation />}></Route>
+            <Route path='*' element={<ErrorPage />}></Route>
+         </Routes>
+         <Footer />
       </div>
    );
 }
