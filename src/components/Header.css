@@ -3,4 +3,20 @@ header {
    justify-content: space-between;
    margin: 48px 100px;
    height: 68px;
+   align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+   header {
+      margin: 16px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   header {
+      margin: 16px;
+   }
+   header img {
+      width: 145px;
+   }
 }

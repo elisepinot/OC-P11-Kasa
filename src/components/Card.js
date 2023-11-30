@@ -1,21 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Card.css';
 import PropTypes from 'prop-types'; // Importe PropTypes
-// import '../data.json';
-
-// function Card({ id, title, cover, location }) {
-//    return (
-//       <article className='accomodation-card'>
-//          <Link to={`/accommodation/${id}`}>
-//             <div>
-//                <img src={cover} alt={title} />
-//                <h3>{title}</h3>
-//                <p>📍 {location}</p>
-//             </div>
-//          </Link>
-//       </article>
-//    );
-// }
 
 function Card(props) {
    return (
@@ -39,3 +24,18 @@ Card.propTypes = {
 };
 
 export default Card;
+
+// Code below is also possible: destructuration
+// function Card({ id, title, cover, location }) {
+//    return (
+//       <article className='accomodation-card'>
+//          <Link to={`/accommodation/${id}`}>
+//             <div>
+//                <img src={cover} alt={title} />
+//                <h3>{title}</h3>
+//                <p>📍 {location}</p>
+//             </div>
+//          </Link>
+//       </article>
+//    );
+// }

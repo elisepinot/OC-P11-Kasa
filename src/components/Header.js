@@ -4,7 +4,9 @@ function Header() {
    return (
       <header>
          <div>
-            <img src={require('../assets/red-logo.svg').default} alt='logo' />
+            <a href='/'>
+               <img src={require('../assets/red-logo.svg').default} alt='logo' />
+            </a>
          </div>
          <NavBar />
       </header>

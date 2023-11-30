@@ -7,4 +7,24 @@ nav {
 
 nav a {
    color: #ff6060;
+   text-decoration: none;
+}
+nav a:hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+   nav a {
+      font-size: 12px;
+      gap: 24px;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   nav {
+      gap: 36px;
+      justify-content: right;
+      text-transform: uppercase;
+   }
 }

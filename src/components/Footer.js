@@ -3,7 +3,7 @@ function Footer() {
    return (
       <footer>
          <img src={require('../assets/white-logo.svg').default} alt='logo'></img>
-         <p>© 2022 Kasa. All rights reserved</p>
+         <p>© 2023 Kasa. All rights reserved</p>
       </footer>
    );
 }

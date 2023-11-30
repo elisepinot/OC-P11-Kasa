@@ -1,19 +1,17 @@
 import Collapse from '../../components/Collapse';
 import Banner from '../../components/Banner';
 import '../../index.css';
+import data from '../../about-collapse.json';
 function About() {
    return (
-      <main>
-         <Banner />
+      <div>
+         <Banner title='' backgroundImage='banner-about-img.png' />
          <section id='about'>
-            <Collapse title='Menu déroulant 1'>
-               <p>Contenu du menu déroulant 1...</p>
-            </Collapse>
-            <Collapse title='Menu déroulant 2'>
-               <p>Contenu du menu déroulant 2...</p>
-            </Collapse>
+            {data.map((about) => (
+               <Collapse key={about.title} title={about.title} text={about.text} />
+            ))}
          </section>
-      </main>
+      </div>
    );
 }
 

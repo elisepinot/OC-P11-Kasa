@@ -1,0 +1,25 @@
+.rating {
+   display: flex;
+}
+
+.star-pink,
+.star-grey {
+   font-size: 24px;
+   margin: 0 6px;
+}
+
+.star-pink path {
+   color: rgba(255, 96, 96, 1);
+}
+
+.star-grey path {
+   color: rgba(227, 227, 227, 1);
+}
+
+@media (max-width: 768px) {
+   .star-pink,
+   .star-grey {
+      font-size: 18px;
+      margin: 0 2px;
+   }
+}
