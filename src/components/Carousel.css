@@ -24,7 +24,6 @@
    opacity: 0.8;
    transform: all 0.3s ease;
    height: 100%;
-   /* object-fit: cover; */
 }
 
 .arrow:hover {

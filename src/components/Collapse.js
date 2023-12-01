@@ -8,6 +8,8 @@ function Collapse({ title, text }) {
       setIsOpen(!isOpen);
    };
 
+   // Array.isArray(text) checks if text prop is an array
+
    const textContent = Array.isArray(text)
       ? text.map((item, index) => <p key={index}>{item}</p>)
       : text;
@@ -16,10 +18,8 @@ function Collapse({ title, text }) {
       <div className='collapse-container'>
          <div className='collapse-header' onClick={toggleCollapse}>
             <h2>{title}</h2>
-            {/* <img src={isOpen ? arrowOpen : arrowClose} alt={isOpen ? 'Fermé' : 'Ouvert'} />{' '} */}
             <img className={isOpen ? 'open' : ''} src={arrow} alt={isOpen ? 'Fermé' : 'Ouvert'} />
          </div>
-         {/* {isOpen && <div className='collapse-content'>{children}</div>} */}
          {isOpen && <div className={`collapse-content ${isOpen ? 'open' : ''}`}>{textContent}</div>}
       </div>
    );
@@ -27,7 +27,8 @@ function Collapse({ title, text }) {
 
 export default Collapse;
 
+// 'text' prop can be a string or an array of strings
 Collapse.propTypes = {
-   title: PropTypes.string.isRequired,
+   title: PropTypes.string,
    text: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]).isRequired,
 };

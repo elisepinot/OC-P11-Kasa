@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 // import React from 'react';
-import 'normalize.css';
+// import 'normalize.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
