@@ -1,6 +1,6 @@
 {
    "homepage": "https://elisepinot.github.io",
-   "name": "kasa-project",
+   "name": "oc-kasa",
    "version": "0.1.0",
    "private": true,
    "dependencies": {
