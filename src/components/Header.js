@@ -4,7 +4,7 @@ function Header() {
    return (
       <header>
          <div>
-            <a href='/'>
+            <a href='/oc-kasa'>
                <img src={require('../assets/red-logo.svg').default} alt='logo' />
             </a>
          </div>

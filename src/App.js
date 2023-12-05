@@ -14,7 +14,7 @@ function App() {
          <Header />
          <main>
             <Routes>
-               <Route path='/' element={<Home />}></Route>
+               <Route path='/oc-kasa' element={<Home />}></Route>
                <Route path='/about' element={<About />}></Route>
                <Route path='/accommodation/:id' element={<Accommodation />}></Route>
                <Route path='*' element={<ErrorPage />}></Route>
